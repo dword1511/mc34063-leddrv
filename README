@@ -1,0 +1,5 @@
+This simple circuit is designed to drive 2-7 LEDs in serial with single Li-ion battery.
+The circuit uses a MC34063 chip in boost converter topology, DO NOT SHORT CIRCUIT THE OUTPUT.
+Efficiency is out of consideration. It should be around 60% ~ 80%.
+The feed back circuit will limit current to (1.25V + Vf) / R2 , where Vf is the forwarding voltage of D3. Unfortunately, if output voltage is higher than 1.25V * (R3 + R5) / R5, output current will be clamped down. IF OUTPUT VOLTAGE IS LOWER THAN INPUT VOLTAGE - Vf, CURRENT WILL BE OUT OF CONTROL!
+I recommend you to use a schottkey diode as D3, since they have lower Vf. However diodes such as 1N4148 should also be able to do the job, while introducing greater error.
