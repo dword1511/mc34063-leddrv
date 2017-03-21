@@ -1,3 +1,5 @@
+NOTE: ONSemi has 34063-style LED drivers NCP3065/3066, which have higher switching frequency and lower feedback voltage.
+
 This simple circuit is designed to drive 2-7 LEDs in serial with single Li-ion battery.
 The circuit uses a MC34063 chip in boost converter topology, DO NOT SHORT CIRCUIT THE OUTPUT.
 Efficiency is out of consideration. It should be around 60% ~ 80%.
